@@ -5,6 +5,7 @@ import java.util.Map;
 import java.util.Objects;
 
 public class HashMapExample {
+    // если в качестве ключа объект обязательно переопределить hashcode and equals
     public static void main(String[] args) {
 
         Map<Integer, String> myMap = new HashMap<>(); // не сохраняет порядок в списке
