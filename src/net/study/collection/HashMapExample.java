@@ -7,7 +7,7 @@ import java.util.Objects;
 public class HashMapExample {
     public static void main(String[] args) {
 
-        Map<Integer, String> myMap = new HashMap<>();
+        Map<Integer, String> myMap = new HashMap<>(); // не сохраняет порядок в списке
 
         myMap.put(12312,"Roma");
         myMap.put(1000,"Igor");
