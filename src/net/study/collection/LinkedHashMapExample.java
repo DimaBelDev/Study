@@ -16,7 +16,7 @@ public class LinkedHashMapExample {
         list.put(18,"Liza");
         list.put(29, "Denis");
         list.put(17, "Marina");
-        
+
         System.out.println("Before : " + list);
         list.get(18);
         System.out.println("After : " + list);

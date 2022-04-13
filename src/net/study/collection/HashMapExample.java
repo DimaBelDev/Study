@@ -13,6 +13,8 @@ public class HashMapExample {
         myMap.put(1000,"Igor");
         myMap.put(13123,"Slava");
         myMap.put(3232,"Vita");
+        myMap.put(null, "Veranica"); // можем
+        myMap.put(3123123, null); // можем
 
         System.out.println(myMap.get(13123)); // получение значения
 
