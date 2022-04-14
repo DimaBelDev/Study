@@ -1,7 +1,6 @@
 package net.study.collection;
 
 import java.util.Objects;
-import java.util.Set;
 import java.util.TreeSet;
 
 public class TreeSetExample {
