@@ -1,4 +1,4 @@
-package net.study.collection;
+package net.study.collection.list;
 
 import java.util.Arrays;
 import java.util.Stack;

@@ -1,4 +1,4 @@
-package net.study.collection;
+package net.study.collection.map;
 
 import java.util.HashMap;
 import java.util.Map;

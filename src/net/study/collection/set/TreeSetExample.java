@@ -1,4 +1,4 @@
-package net.study.collection;
+package net.study.collection.set;
 
 import java.util.Objects;
 import java.util.TreeSet;

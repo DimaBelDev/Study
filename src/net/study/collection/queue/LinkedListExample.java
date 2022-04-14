@@ -4,7 +4,10 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class LinkedListExample {
+    // реализует (First in First out)
+
     public static void main(String[] args) {
+
         Queue<String> queueLinkedList = new LinkedList<>();
 
         // queueLinkedList.add("Dima");//Если очередь ограничена кол-во элементов, то выбросит ошибку если привысим кол-во

@@ -3,6 +3,7 @@ package net.study.collection.queue;
 import java.util.PriorityQueue;
 
 public class PriorityQueueExample {
+     // реализует (First in First out)
      // Сортирует элементы по возрастанию
      // Если работаем с объектам обязательно переопределять COMPARABLE ИЛИ COMPARATOR
      // все остально так же как и в Queue LinkedList
