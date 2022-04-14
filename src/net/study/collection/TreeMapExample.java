@@ -11,6 +11,7 @@ public class TreeMapExample {
         treeMap.put(7.6, "Vika");
         treeMap.put(3.8, "Nasta");
         treeMap.put(8.8, "Andrey");
+    //    treeMap.put(null, "Sveta"); // НЕЛЬЗЯ ЗАДАВАТЬ NULL=
 
         treeMap.put(7.6, "&&&&&&&&"); // при добавлении элемента с одинаковым ключом остается последний
         //System.out.println(treeMap);
