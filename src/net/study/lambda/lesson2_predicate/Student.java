@@ -1,4 +1,4 @@
-package net.study.lambda;
+package net.study.lambda.lesson2_predicate;
 
 public class Student {
     private String name;
