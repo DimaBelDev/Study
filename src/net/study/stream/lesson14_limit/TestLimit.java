@@ -8,7 +8,7 @@ public class TestLimit {
         List<Integer> list = new ArrayList<>(List.of(23,12,43,23,2,4,7,21));
 
         list.stream().distinct().filter(e -> e > 10).limit(2).forEach(System.out::println);
-        // limit - ограничивает кол-во элементов 
+        // limit - ограничивает кол-во элементов
 
     }
 }
