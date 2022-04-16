@@ -1,4 +1,4 @@
-package net.study.stream;
+package net.study.stream.lesson9_peek;
 
 import java.util.stream.Stream;
 
