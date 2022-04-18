@@ -5,6 +5,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class LockExample {
     public static void main(String[] args) {
+        // final Lock lock  = new ReentrantLock();
         Thread thread1 = new Thread(() -> new Call().mobileCall());
         Thread thread2 = new Thread(() -> new Call().viberCall());
         Thread thread3 = new Thread(() -> new Call().whatsAapCall());
@@ -16,34 +17,49 @@ public class LockExample {
     }
 }
 class Call{
-    private final static Lock lock = new ReentrantLock();
 
-    public synchronized void viberCall(){
+//    private Lock lock;
+//
+//    public Call(Lock lock) {
+//        this.lock = lock;
+//    }
+    private static final Lock lock = new ReentrantLock(); // принцип как у synchronized
+
+    public  void viberCall(){
         try {
             lock.lock();
-            System.out.println("End viber call");
             System.out.println("Start viber call");
-        }finally {
+            Thread.sleep(100);
+            System.out.println("End viber call");
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
             lock.unlock();
         }
 
     }
 
-    public synchronized void mobileCall(){
+    public void mobileCall(){
            try {
             lock.lock();
             System.out.println("Start mobile call");
+            Thread.sleep(100);
             System.out.println("End mobile call");
-        }finally {
+        } catch (InterruptedException e) {
+               e.printStackTrace();
+           } finally {
         lock.unlock();
            }
       }
-    public synchronized void whatsAapCall(){
+    public void whatsAapCall(){
             try {
                 lock.lock();
                 System.out.println("Start whatsapp call");
+                Thread.sleep(100);
                 System.out.println("End whatsapp call");
-            }finally {
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } finally {
                 lock.unlock();
             }
     }
