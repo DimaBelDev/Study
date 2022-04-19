@@ -16,6 +16,7 @@ public class TestThreadPool {
                 e.printStackTrace();
             }
             System.out.println(i);
+            System.out.println(Thread.currentThread().getName());
         }});
 
         threadPool.shutdown(); // выполнив все задания он прекращает работать

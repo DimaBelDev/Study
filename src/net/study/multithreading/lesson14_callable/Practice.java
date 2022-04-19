@@ -47,6 +47,7 @@ class PartialSum implements Callable<Long> {
         for(long i = from; i <= to;i++){
             result += i;
         }
+        System.out.println("Name = " + Thread.currentThread().getName());
         return result;
     }
 }
