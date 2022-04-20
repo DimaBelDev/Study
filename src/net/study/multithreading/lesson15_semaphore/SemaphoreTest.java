@@ -1,9 +1,11 @@
 package net.study.multithreading.lesson15_semaphore;
 
+import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Semaphore;
 
 public class SemaphoreTest {
     public static void main(String[] args) {
+
         Semaphore semaphore = new Semaphore(2); // в одно время только указанное кол-во потоков имеют доступ к ресурсу
         new Call(semaphore, "Dima");
         new Call(semaphore, "Vika");
@@ -25,12 +27,12 @@ class Call extends Thread{
           public void speaking() throws InterruptedException {
                   try {
                           System.out.println("Ждет " + name);
-                          semaphore.acquire();
+                          semaphore.acquire(); // блокирует все остальные потоки если их больше чем указано
                           System.out.println("Делает звонок " + name);
                           sleep(2000);
                       System.out.println("Закончил звонок " + name);
                   } finally {
-                          semaphore.release();
+                          semaphore.release(); // освобождает место
                   }
           }
 
