@@ -17,7 +17,7 @@ class Math{
 
         int delimoe = 12;
 
-        class Delenie{
+         class Delenie{
 
             private int delitel;
 
@@ -30,5 +30,6 @@ class Math{
                 return delimoe%delitel;
             }
         }
+
     }
 }

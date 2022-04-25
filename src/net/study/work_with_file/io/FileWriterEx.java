@@ -1,4 +1,4 @@
-package net.study.work_with_file;
+package net.study.work_with_file.io;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -17,7 +17,7 @@ public class FileWriterEx {
 //            for(int i = 0; i < s.length();i++){
 //                fileWriter.write(s.charAt(i));
 //            }
-            fileWriter.write(s);// можно сразу String, но под капотом переобразуется и запишется в char
+            fileWriter.write(s);// можно сразу String, но под капотом переобразуется и запишется в байтах
         } catch (IOException e) {
             e.printStackTrace();
         }finally {

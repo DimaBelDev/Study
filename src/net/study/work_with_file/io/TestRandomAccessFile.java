@@ -1,4 +1,4 @@
-package net.study.work_with_file;
+package net.study.work_with_file.io;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

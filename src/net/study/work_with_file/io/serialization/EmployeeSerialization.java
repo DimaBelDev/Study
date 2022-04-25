@@ -1,4 +1,4 @@
-package net.study.work_with_file.serialization;
+package net.study.work_with_file.io.serialization;
 
 import java.io.*;
 
