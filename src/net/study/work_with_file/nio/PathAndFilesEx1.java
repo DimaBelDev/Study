@@ -31,8 +31,8 @@ public class PathAndFilesEx1 {
 //        System.out.println("_________________________________________________");
 //        System.out.println(folderPath.resolve(filePath)); // объединяет два пути(тот что в параметрах добавляем в конец)
 //        System.out.println("_________________________________________________");
-//        Path otherPath = Paths.get("C:\\Users\\Anonymous\\Desktop\\A\\N\\test20.txt");
-//        System.out.println(folderPath.relativize(otherPath)); // относительный путь пути который находится в параметрах
+        Path otherPath = Paths.get("C:\\Users\\Anonymous\\Desktop\\A\\N\\test20.txt");
+        System.out.println(folderPath.relativize(otherPath)); // относительный путь пути который находится в параметрах
 //        System.out.println("_________________________________________________");
         // Files
         Path pathForFiles = Paths.get("C:\\Users\\Anonymous\\Desktop\\M");
