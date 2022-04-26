@@ -1,4 +1,4 @@
-package net.study.work_with_file.io.serialization;
+package net.study.work_with_file.io;
 
 import java.io.File;
 import java.io.IOException;
