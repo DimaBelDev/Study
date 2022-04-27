@@ -1,4 +1,4 @@
-package net.study.comparator;
+package net.study.collection.comparator;
 
 
 

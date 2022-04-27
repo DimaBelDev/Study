@@ -1,4 +1,4 @@
-package net.study.comparable;
+package net.study.collection.comparable;
 
 import java.util.ArrayList;
 import java.util.Collections;
